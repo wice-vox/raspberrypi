@@ -1,2 +1,1 @@
-#docker start raspberrypi || docker run -d --name raspberrypi -p 2222:2222 -p 80:80 -p 443:443 --privileged desktopcontainers/raspberrypi
 docker run -d --name raspberrypi -p 2222:2222 -p 80:80 -p 443:443 --privileged desktopcontainers/raspberrypi
