@@ -1,1 +1,1 @@
-docker build --tag 'rpi' .
+docker build --tag "rpi" .
