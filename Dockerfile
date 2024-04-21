@@ -1,14 +1,17 @@
 FROM desktopcontainers/base-debian
 
-MAINTAINER MarvAmBass (https://github.com/DesktopContainers)
+#MAINTAINER MarvAmBass (https://github.com/DesktopContainers)
 
 RUN apt-get -q -y update && \
     apt-get -q -y install wget \
                           telnet \
+                          unzip \
                           qemu-system-arm \
                           util-linux && \
     apt-get -q -y clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+COPY scripts /usr/local/bin/
 
 RUN wget -O raspbian-lite.zip https://downloads.raspberrypi.org/raspbian_lite_latest && \
     unzip raspbian-lite.zip && \
@@ -20,7 +23,7 @@ RUN wget -O raspbian-lite.zip https://downloads.raspberrypi.org/raspbian_lite_la
     chmod a+rw /raspberry.img /kernel && \
     echo "rpi.sh \$*" >> /usr/local/bin/ssh-app.sh
 
-COPY scripts /usr/local/bin/
+#COPY scripts /usr/local/bin/
 
 EXPOSE 2222
 VOLUME ["/images"]
