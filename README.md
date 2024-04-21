@@ -65,3 +65,7 @@ You can either connect via ssh to the qemu raspberry rasbian system or get the q
 # https://www.qemu.org/
 # https://hub.docker.com/r/desktopcontainers/raspberrypi
 # https://github.com/DesktopContainers/raspberrypi/blob/master/README.md
+# https://github.com/dhruvvyas90/qemu-rpi-kernel/tree/master
+# https://debian.pkgs.org/11/debian-main-amd64/fwbuilder_5.3.7-4.1_amd64.deb.html
+# https://github.com/DesktopContainers/base-debian
+# https://github.com/lukechilds/dockerpi
