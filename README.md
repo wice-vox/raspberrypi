@@ -70,3 +70,7 @@ You can either connect via ssh to the qemu raspberry rasbian system or get the q
 # https://github.com/DesktopContainers/base-debian
 # https://github.com/lukechilds/dockerpi
 # https://github.com/DesktopContainers
+
+#if vnc doesn't start, remove the lock files
+docker exec raspberrypi rm -rf /tmp/.X1-lock
+docker exec -it raspberrypi rm -rf /tmp/.X11-unix/X1
