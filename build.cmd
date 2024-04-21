@@ -1,1 +1,1 @@
-docker build --tag "rpi" .
+Get-Content Dockerfile | docker build . --tag "rpi"
