@@ -10,9 +10,10 @@ while [ ! -e "$IMAGE" ]; do echo "waiting for image to appear..."; sleep 3; done
 echo "starting new emulator..."
 qemu-system-arm -kernel "$KERNEL" \
                 -cpu arm1176 \
-                -m 256 \
+                -m 1024 \
                 -M versatilepb \
                 -serial stdio \
                 -append "root=/dev/sda2 rootfstype=ext4 rw" \
                 -hda "$IMAGE" \
-                -redir tcp:2222::22
+                -redir tcp:2222::22 \
+		        -vga std
