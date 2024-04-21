@@ -56,5 +56,7 @@ You can either connect via ssh to the qemu raspberry rasbian system or get the q
 * __RC\_LOCAL\_COMAND__
  * no default - bash comands to include in rc.local
 
-# optionally, once connected as user pi (use ssh or use QEMU console on http://localhost ), run:
-# sudo apt update; sudo apt install xserver-xorg raspberrypi-ui-mods fwbuilder fwbuilder-common
+# optionally, once connected as user pi (use ssh or use QEMU console on http://localhost ), ypu can execute commands on the rpi:
+# sudo apt update; sudo apt install xserver-xorg raspberrypi-ui-mods
+# sudo apt upgrade
+# sudo apt install fwbuilder fwbuilder-common
