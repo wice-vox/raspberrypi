@@ -57,6 +57,11 @@ You can either connect via ssh to the qemu raspberry rasbian system or get the q
  * no default - bash comands to include in rc.local
 
 # optionally, once connected as user pi (use ssh or use QEMU console on http://localhost ), ypu can execute commands on the rpi:
+# first modify apt sources to legacy, then
 # sudo apt update; sudo apt install xserver-xorg raspberrypi-ui-mods
 # sudo apt upgrade
 # sudo apt install fwbuilder fwbuilder-common
+#useful links
+# https://www.qemu.org/
+# https://hub.docker.com/r/desktopcontainers/raspberrypi
+# https://github.com/DesktopContainers/raspberrypi/blob/master/README.md
